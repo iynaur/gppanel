@@ -37,3 +37,6 @@ INCLUDE_DIRECTORIES( "include" )
 
 ADD_SUBDIRECTORY(gpPanel)
 ADD_SUBDIRECTORY(include)
+
+add_executable(sample main.cpp )
+target_link_libraries(sample gpPanel)

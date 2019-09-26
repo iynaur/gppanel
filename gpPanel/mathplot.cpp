@@ -91,12 +91,12 @@ double mpWindow::zoomIncrementalFactor = 1.5;
 #endif
 
 #ifdef MP_POP_LANGUAGE_FI
-#define MP_POPMENU_CENTER               _("Keskitä")
-#define MP_POPMENU_CENTER_INFO          _("Keskitä ikkuna tähän pisteeseen")
+#define MP_POPMENU_CENTER               _("Keskitï¿½")
+#define MP_POPMENU_CENTER_INFO          _("Keskitï¿½ ikkuna tï¿½hï¿½n pisteeseen")
 #define MP_POPMENU_FIT                  _("Sovita")
 #define MP_POPMENU_FIT_INFO             _("Sovita ikkunaan")
-#define MP_POPMENU_ZOOM_IN              _("Zoomaus sisään")
-#define MP_POPMENU_ZOOM_IN_INFO         _("Zoomaus sisään")
+#define MP_POPMENU_ZOOM_IN              _("Zoomaus sisï¿½ï¿½n")
+#define MP_POPMENU_ZOOM_IN_INFO         _("Zoomaus sisï¿½ï¿½n")
 #define MP_POPMENU_ZOOM_OUT             _("Zoomaus ulos")
 #define MP_POPMENU_ZOOM_OUT_INFO        _("Zoomaus ulos")
 #define MP_POPMENU_LOCK_ASPECT          _("Lukitse suhde")
@@ -3509,7 +3509,7 @@ void mpWindow::UpdateAll()
                 // Calculate scroll bar size and thumb position
                 int sizeX = (int) ((maxX - minX) * m_scaleX);
                 int thumbX = (int)(((m_posX + leftMargin) - minX) * m_scaleX);
-                SetScrollbar(wxHORIZONTAL, thumbX, cx - (m_marginRight + m_marginLeft), sizeX);
+                //SetScrollbar(wxHORIZONTAL, thumbX, cx - (m_marginRight + m_marginLeft), sizeX);
             }
             // Do y scroll bar
             {
@@ -3523,7 +3523,7 @@ void mpWindow::UpdateAll()
                 // Calculate scroll bar size and thumb position
                 int sizeY = (int)((maxY - minY) * m_scaleY);
                 int thumbY = (int)((maxY - (m_posY - topMargin)) * m_scaleY);
-                SetScrollbar(wxVERTICAL, thumbY, cy - (m_marginTop + m_marginBottom), sizeY);
+                //SetScrollbar(wxVERTICAL, thumbY, cy - (m_marginTop + m_marginBottom), sizeY);
             }
         }
     }
